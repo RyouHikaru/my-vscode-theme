@@ -1,16 +1,27 @@
-# my-vscode-theme README
+# My VS Code Theme
 
-## Working with Markdown
+My Custom VSCode Theme inspired by Dalton Menezes' [Aura Theme](https://github.com/daltonmenezes/aura-theme)
+and CodingPhase's [VS Code Style](https://github.com/codingphasedotcom/codingphase-style-vs-code).
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### Sample Screenshot
 
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+![Sample](sample.png)
 
-## For more information
+### How to use
 
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+1. Open up a Terminal
+2. Install vsce package
 
-**Enjoy!**
+   `npm install -g vsce`
+
+3. Package the theme
+
+   `vsce package`
+
+4. Install the theme
+
+   `code --install-extension [name_of_packaged_theme].vsix`
+
+   Example:
+
+   `code --install-extension my-vscode-theme-0.0.1.vsix`
